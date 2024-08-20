@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Basica de HTML</title>
+    <style>
+        table{
+            border-collapse: collapse; 
+
+        }
+        th, td{
+            border-collapse: collapse; 
+            border: 3px double black;
+            padding: 2px;
+        }
+        td{ text-align: left;}
+    </style>
+</head>
+<body>
+        <header>
+                <h1>Encabezado Principal</h1>
+
+                <h2 id="Estructura">1. Estructura Basica del Documento HTML</h2>
+                <p> Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>2. Encabezados y Propiedades del Texto</h2>
+                <h3>Encabezado h2</h3>
+                <h4><em>Encabezado h4 en cusriva</em></h4>
+                <span style="font:bold; color: red;"> Este es un texto en negrita dentro de un span</span>
+            </section>
+
+            <section>
+                <h2>3. Divisiones y Agrupacion de Contenido</h2>
+                <div>
+                    <article>
+                        <h3> Seccion 1</h3>
+                        <p> Parrafo con contenido de la primer sección agrupada en un div</p>
+                    </article>
+                    <article>
+                        <h3> Seccion 2</h3>
+                        <p> Parrafo con contenido de la segunda sección agrupada en un div</p>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+
+                <h2>4. Enlaces y Listas</h2>
+                    <p> Visita nuestro <a target="_blank" href="https://github.com/LucasIGarcia"> sitio web</a>  para mas información.</p>
+                    
+                    <nav>
+                    <ul><h4>Lista de Enlaces Internos</h4>
+                        
+                        <li><a href="#Estructura">  Ir a Estructura </a></li>
+                        <li><a href="#Mult"> Ir a Multimedia </a></li>
+                        <li><a href="#Form"> Ir a Formulario </a></li>
+                    </ul>
+                    </nav>
+
+                <div>
+                    <ol><h4>Lista de Items ordenados</h4>
+                        <li>Item de una lista</li>
+                        <li>Item de una lista</li>
+                        <li>Item de una lista</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="Mult">
+
+                <h2>5. Elementos de Multimedia</h2>
+                    <img src="https://media.diariouno.com.ar/p/c58c5ac8d8922dcc26f337fe326ec459/adjuntos/298/imagenes/009/005/0009005012/1200x0/smart/utnjpg.jpg" width="250px" height="150px" alt="Fachada de la UTN Mendoza"> 
+                    <video width="200" height="150" controls>
+                        <source src="https://cdn.pixabay.com/video/2020/12/17/59483-493557880_large.mp4" type="video/mp4">
+                    </video>
+                    <audio controls>
+                        <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg">
+                    </audio>
+                    
+            </section>
+
+            <section>
+                <h2>6. Tablas </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Columna 1</th> <th> Columna 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Dato 1</td> <td> Dato 2</td>
+                            </tr>
+                            <tr>
+                                <td> Dato 3</td> <td> Dato 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section id="Form">
+                <h2> 7. Formulario</h2>
+                    <form>
+                    
+                        <label> Nombre: </label>
+                                <input type="text" placeholder="Ingresar Nombre">
+                
+                        <label> Email: </label>
+                            <input type="email" placeholder="Ejemplo@ejemplo.com">
+                    
+                        <label> Mensaje: </label>
+                        <textarea> Si desea agregue un mensaje...</textarea>
+            
+                        <button type="submit"> Enviar </button>
+                        
+                    </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>2024 Trabajo Práctico de HTML. Lucas Ignacio Garcia.</p>
+        </footer>
+
+</body>
+</html>
